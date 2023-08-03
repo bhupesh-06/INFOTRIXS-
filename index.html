@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Bhupesh Dubey</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+       As an MCA (Master of Computer Applications) student with a strong passion for DevOps for 9 months of experience, I possess a comprehensive understanding of computer science coding Languages and practical skills in DevOps methodologies. I have excelled academically, gaining expertise in software development, system administration, and cloud computing. My proficiency in version control systems, CI/CD pipelines, automated testing, and containerization, combined with my scripting and programming abilities, enables me to streamline development and deployment processes. With a commitment to continuous learning and effective communication, I aspire to contribute to seamless integration between development and operations for faster and more reliable software delivery in a progressive and innovative organization. 
+    </p>
+  </section>
+
+  <section id="projects">
+    <h2>Project </h2>
+    <div class="project">
+      <h3>Inbesmnet.in</h3>
+      <p>The current project on which I am working is based on the microservice architecture. We have MongoDB as a database for the DB caching.
+        It has microservices deployed on EKS containers with Blue-Green deployment strategy. Each microservice API is written in JAVA. 
+        For high availability, each microservice is run with minimum 4 containers and the Application Load Balancer distrubutes the traffic among them internally. 
+        Afterwards there are 10 micro-frontends that are hosted in S3 in association with CloudFront. The Front-End is coded with Angular.
+        
+        The infrastructure of a project is managed with Terraform and uses the latest technology tools and services such as S3, CF, EKS, ALB, AWS Secretes Manger, MongoDB (SaaS), R53, SSL, IAM, VPC, WAF, CloudWatch, redis(aws service), SG, Lambda (only integrate did not write program), AWS Cognito.
+        
+        The tools selected for CI/CD are Git, Gitlab-ci, Maven, npm (for angular), SonarScan, Selenium, S3 & ECR. There is separate CI/CD pipelines used for backend & front-end.
+        
+        Branching Strategy: The developer team is responsible for managing the Develope Brnach. The developers merge their code from their respective Feature Branches into the Develope Branch. 
+        Its is then combines with the previous hotfixes and bug fixes and then the stable code  get merged with the Release Branch. 
+        The code from the Release Branch is used in Test and UAT environment. If it get accepted, it is then merged with Main Branch for the Deployment in the Production Environment.
+        
+        CI/CD: The Developers commits their codes in the source code repositories in Github after the successfull local testing. 
+        The source code is then pulled from the repositories and sends for the inspection of vulnerabilities and code bugs.
+         After testing the code, it moves for compilation and building the artifacts. Where the Continous Integration Environment builds and tests the artifacts.
+         After the successfull testing of builds, it get published to the Artifact Repository that is AWS S3. 
+        The next stage is set for the Container Image building and publishing to the Container Registry. 
+        The CI/CD tool pulls the tested Artifacts from the Artifactory and builds the Container Images with the help of Dockerfile. 
+        The Container Images then pushed to the ECR. Then application get deployed on the Clusters through the EKS service. 
+        After the successfull deployment, the application is being monitored by AWS monitoring services.
+        The project has environments like sandbox, Dev, Test, UAT and Prod.</p>
+    </div>
+   
+    <!-- Add more project divs as needed -->
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>
+      You can contact me at: bhupeshdubey06@gmail.com
+    </p>
+  </section>
+</body>
+</html>
+
+
