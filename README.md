@@ -1,4 +1,5 @@
 # INFORTIXS TASK AWS(CLOUD) 
+     http://infortixs.s3-website.ap-south-1.amazonaws.com
 # Dear Infortixs,
 `I wanted to express my heartfelt thanks for providing me with the wonderful opportunity to Internship for AWS(Cloud). I am truly grateful for this experience, and it has been an invaluable learning opportunity for me.
 I look forward to continuing to contribute my best efforts to DevOps / Cloud  and to seize future opportunities for growth. Once again, thank you for believing in me and for this chance to be part of such an amazing team.`
